@@ -1,0 +1,14 @@
+nav{
+    background-color: #181b1e;
+    border-bottom: #2B2B2B 1px solid;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+    font-weight: 600;
+}
+
+nav a.active{
+    color: rgb(82, 79, 255) !important;
+}
