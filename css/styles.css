@@ -1,14 +1,100 @@
-nav{
-    background-color: #00000032;
-    border-bottom: #2B2B2B 2px solid;
+:root {
+    --dark-primary: #1e1e1e;
+    --dark-secondary: #2B2B2B;
+
+    --light-primary: #c0c0c0;
+    --light-secondary: #919191;
+
+    --color-primary: #524fff;
 }
 
-nav a{
+body {
+    background-color: #1a1a1a !important;
+}
+
+header {
+    padding-bottom: 8rem;
+}
+
+nav {
+    background-color: var(--dark-primary);
+    border-bottom: var(--dark-secondary) 2px solid;
+
+}
+
+nav a {
     text-decoration: none;
-    color: rgb(192, 192, 192);
+    color: var(--light-primary);
     font-weight: 600;
 }
 
-nav a.active{
-    color: rgb(82, 79, 255) !important;
+nav a.active {
+    color: #524fff !important;
+}
+
+nav a:hover {
+    transition: all .25s;
+    opacity: .75;
+}
+
+.homeImages {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 75%;
+    height: 300px;
+    border: 3px solid var(--light-secondary);
+    object-fit: cover;
+}
+
+.homeImages:hover {
+    transition: all .5s;
+
+    transform: scale(1.01);
+    border-color: var(--color-primary);
+}
+
+#profile-main {
+    width: 90%;
+}
+
+.profile-block {
+    border: 2px solid var(--dark-secondary);
+    border-radius: 15px;
+    background-color: var(--dark-primary);
+}
+
+table {
+    background: var(--dark-primary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background: var(--color-primary);
+    color: white;
+}
+
+thead th {
+    padding: 1rem;
+}
+
+tbody td {
+    padding: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: 0.2s;
+}
+
+td:nth-child(7) {
+    font-weight: bold;
+    text-transform: uppercase;
 }

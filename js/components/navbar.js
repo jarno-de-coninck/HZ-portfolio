@@ -1,6 +1,6 @@
 export default function navigation(active) {
     return `
-    <nav class="py-3 d-flex justify-content-center align-items-center w-100">
+    <nav class="py-3 d-flex justify-content-center align-items-center position-fixed w-100 z-2">
         <ul class="list-unstyled d-flex gap-5 m-0">
             <li> 
                 <a class="${active === 'home' ? 'active' : ''}" href="${active === 'blog-post' ? '../' : ''}index.html">Home</a>
