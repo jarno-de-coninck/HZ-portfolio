@@ -17,13 +17,84 @@
         const navbarContainer = document.querySelector('header')
         navbarContainer.innerHTML = navigation('blog');
     </script>
+
+    <!-- Aside footer -->
+    <script type="module">
+        import aside from './js/components/aside.js';
+        const asideContainer = document.querySelector('body');
+        asideContainer.insertAdjacentHTML('beforeend', aside());
+    </script>
 </head>
 
 <body>
     <header></header>
     
-    <main >
-        <h1> Blog </h1>
+    <main class="d-flex justify-content-center">
+        <section class="w-75">
+            <h1> Latest blogs </h1>
+            <section class="mt-5 row"> 
+                
+                 <article class="col-md-6 mb-3">
+                     <button onclick="window.location.href='blogs/study-choice.html'" class="w-100 p-3 blog-button text-start">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="images/hz-logo.png" alt="Study choice logo" class="blog-image  me-3 rounded">
+                            <h5 class="mb-0"> Study choice </h5>
+                        </div>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                        </p>
+                    </button>
+                </article>
+
+                 <article class="col-md-6 mb-3">
+                     <button onclick="window.location.href='blogs/swot-analysis.html'" class="w-100 p-3 blog-button text-start">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="images/swot.png" alt="Study choice logo" class="blog-image  me-3 rounded">
+                            <h5 class="mb-0"> Swot analysis </h5>
+                        </div>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                        </p>
+                    </button>
+                </article>
+
+                 <article class="col-md-6 mb-3">
+                     <button onclick="window.location.href='blogs/programming-experience.html'" class="w-100 p-3 blog-button text-start">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="images/java.png" alt="Study choice logo" class="blog-image  me-3 rounded">
+                            <h5 class="mb-0"> Programming experience </h5>
+                        </div>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                        </p>
+                    </button>
+                </article>
+
+                 <article class="col-md-6 mb-3">
+                     <button onclick="window.location.href='blogs/first-feedback.html'" class="w-100 p-3 blog-button text-start">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="images/feedback.png" alt="Study choice logo" class="blog-image  me-3 rounded">
+                            <h5 class="mb-0"> First Feedback </h5>
+                        </div>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                        </p>
+                    </button>
+                </article>
+
+                 <article class="col-md-6 mb-3">
+                     <button onclick="window.location.href='blogs/fieldwork-ict.html'" class="w-100 p-3 blog-button text-start">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="images/webdesign.png" alt="Study choice logo" class="blog-image  me-3 rounded">
+                            <h5 class="mb-0"> Fieldwork ICT </h5>
+                        </div>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                        </p>
+                    </button>
+                </article>
+            </section>
+        </section>
     </main>
 </body>
 </html>

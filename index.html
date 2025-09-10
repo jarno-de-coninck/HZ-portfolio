@@ -21,6 +21,13 @@
         const navbarContainer = document.querySelector('header')
         navbarContainer.innerHTML = navigation('home');
     </script>
+
+    <!-- Aside footer -->
+    <script type="module">
+        import aside from './js/components/aside.js';
+        const asideContainer = document.querySelector('body');
+        asideContainer.insertAdjacentHTML('beforeend', aside());
+    </script>
 </head>
 
 <body>
