@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html data-bs-theme="dark">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title> Portfolio/Blog </title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/styles.css'>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <!-- Navbar -->
     <script type="module">
@@ -21,9 +25,60 @@
 
 <body>
     <header></header>
-    
-    <main class="d-flex justify-content-center">
-       <h1> Field work </h1>
+
+    <section id="blog-header" class="text-center">
+        <h1 class="mt-5"> Game projects </h1>
+        <h5 id="blog-date"> 🎮 My Luau Game Projects </h5>
+    </section>
+
+    <main class="container mt-2">
+        <a href="/blog.html"> <- Back to blogs </a>
+
+                <div class="row justify-content-center mt-4">
+                    <h3> Learning Through Game Development </h3>
+                    <p>
+                        A large part of my coding journey started with <strong>Luau</strong>, the scripting language of
+                        Roblox Studio.
+                        By experimenting with systems, mechanics, and player interaction, I learned how to structure
+                        code, solve problems,
+                        and bring ideas to life. These projects gave me practical experience that I’m now building on in
+                        web and software development.
+                    </p>
+
+                    <h4 class="mt-4"> Some Things I Worked On </h4>
+                    <ul>
+                        <li><strong>Admin panel:</strong> A Roblox management system that lets admins control gameplay,
+                            store and modify player data, and use custom commands for fast in-game management.</li>
+                        <li><strong>Whispered:</strong> An infinite exploration game with procedurally generated “chunks
+                            / biomes” and interactive items like consumables with unique effects.</li>
+                        <li><strong>Minesweeper:</strong> A recreation of the classic puzzle game inside Roblox, using
+                            Luau scripting to handle grid logic, bomb placement, and reveal mechanics.</li>
+                        <li><strong>BlockRunners (Spleef):</strong> A fast-paced multiplayer minigame where players try
+                            to survive by breaking blocks under opponents’ feet while keeping themselves safe.</li>
+                        <li>Worked with <strong>DataStores</strong> to serialize and persist complex data like notes and
+                            metadata.</li>
+                    </ul>
+
+                    <h4 class="mt-4"> Skills I Gained </h4>
+                    <ul>
+                        <li>Building structured systems in an event-driven environment.</li>
+                        <li>Hands-on experience with saving/loading persistent player data using Roblox DataStores.</li>
+                        <li>Debugging and testing live multiplayer features.</li>
+                        <li>Creativity in designing unique mechanics and environments that encourage exploration.</li>
+                        <li>Designing both single-player puzzle logic and competitive multiplayer gameplay loops.</li>
+                    </ul>
+
+                    <p class="mt-4">
+                        These Luau projects were my introduction to development, and they showed me how much I enjoy
+                        creating interactive systems.
+                        From building management tools like my admin panel, to experimenting with infinite world
+                        generation in <em>Whispered</em>,
+                        or designing competitive games like <em>Minesweeper</em> and <em>BlockRunners</em>,
+                        I gained both technical and creative skills that I now apply to larger-scale web and software
+                        projects.
+                    </p>
+                    </section>
     </main>
 </body>
+
 </html>

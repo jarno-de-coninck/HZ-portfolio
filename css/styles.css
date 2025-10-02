@@ -1,3 +1,4 @@
+/* Root variables for consistent theming across the site */
 :root {
     --dark-primary: #1e1e1e;
     --dark-secondary: #2B2B2B;
@@ -6,8 +7,10 @@
     --light-secondary: #919191;
 
     --color-primary: #524fff;
+    --color-secondary: rgb(123, 79, 255);
 }
 
+/* Base body styling */
 body {
     background-color: #1a1a1a !important;
     min-height: 100vh;
@@ -15,10 +18,12 @@ body {
     display: flex;
 }
 
+/* Header spacing */
 header {
-    padding-bottom: 5rem;
+    padding-bottom: 3.6rem;
 }
 
+/* Navigation bar styling */
 nav {
     background-color: var(--dark-primary);
     border-bottom: var(--dark-secondary) 2px solid;
@@ -40,6 +45,7 @@ nav a:hover {
     opacity: .75;
 }
 
+/* Home page image cards */
 .homeImages {
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -56,10 +62,12 @@ nav a:hover {
     border-color: var(--color-primary);
 }
 
+/* Profile section width */
 #profile-main {
     width: 90%;
 }
 
+/* Profile content blocks */
 .profile-block {
     border: 2px solid var(--dark-secondary);
     border-radius: 15px;
@@ -67,6 +75,7 @@ nav a:hover {
     box-shadow: 0 4px 15px #0000004d;
 }
 
+/* Table styling */
 table {
     background: var(--dark-primary);
     border-radius: 12px;
@@ -85,24 +94,15 @@ thead th {
 
 tbody td {
     padding: 0.9rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: none;
     font-size: 0.9rem;
 }
 
-tbody tr:last-child td {
-    border-bottom: none;
+tbody tr:first-child td {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    transition: 0.25s;
-}
-
-td:nth-child(7) {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
+/* Input fields in tables */
 td input {
     background-color: var(--dark-secondary) !important;
 }
@@ -118,16 +118,17 @@ td input:focus {
     box-shadow: none !important;
 }
 
+/* Progress bar background */
 .progress {
     background-color: var(--dark-primary) !important;
 }
 
+/* Expandable details elements */
 details {
     background-color: var(--dark-primary);
     border: 2px solid var(--dark-secondary);
     border-radius: 15px;
     box-shadow: 0 4px 15px #0000004d;
-
 }
 
 details:hover {
@@ -136,9 +137,7 @@ details:hover {
     border-color: var(--color-primary) !important;
 }
 
-
-details[open] 
-{
+details[open] {
     border-color: var(--color-primary) !important;
     animation: fadeIn 0.3s ease-in-out;
 }
@@ -148,10 +147,13 @@ details[open]
     to { opacity: 1; }
 }
 
+/* Global link styling */
 a {
+    text-decoration: none !important;
     color: var(--color-primary) !important;
 }
 
+/* Blog post buttons */
 .blog-button {
     background-color: var(--dark-primary);
     border: 2px solid var(--dark-secondary);
@@ -170,6 +172,7 @@ a {
     object-fit: cover;
 }
 
+/* Footer aside section */
 #main-aside {
     background-color: var(--dark-primary);
     border-top: 2px solid var(--dark-secondary);
@@ -183,4 +186,29 @@ a {
 #main-aside a:hover {
     color: var(--color-primary) !important;
     transition: 0.25s;
+}
+
+/* Blog post header with gradient */
+#blog-header {
+    background-image: linear-gradient(200deg, var(--color-primary), var(--color-secondary));
+    min-height: 20vh;
+}
+
+#blog-date {
+    color: var(--light-primary);
+}
+
+/* Blog post images */
+.blog-images {
+    border: var(--color-primary) 2px solid;
+    border-radius: 15px;
+}
+
+/* Blog content blocks */
+.blog-block {
+    border: 2px solid var(--dark-secondary);
+    border-radius: 15px;
+    background-color: var(--dark-primary);
+    box-shadow: 0 4px 15px #0000004d;
+    padding: 10px;
 }

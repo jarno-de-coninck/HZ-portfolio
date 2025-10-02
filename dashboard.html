@@ -28,6 +28,16 @@
     const asideContainer = document.querySelector('body');
     asideContainer.insertAdjacentHTML('beforeend', aside());
   </script>
+
+  <style>
+    tbody + tbody {
+      border-top: 2px solid #495057;
+    }
+    
+    tbody tr:first-child td:first-child {
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
@@ -48,7 +58,6 @@
       </div>
     </section>
 
-
     <script src="js/dashboard.js"></script>
 
     <article class="w-100 d-flex justify-content-center mb-5">
@@ -63,6 +72,8 @@
             <th>Status</th>
           </tr>
         </thead>
+
+        <!-- Program & Career Orientation -->
         <tbody>
           <tr>
             <td>Program & Career Orientation</td>
@@ -72,7 +83,10 @@
             <td>Quarter 1</td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Computer Science Basics -->
+        <tbody>
           <tr>
             <td>Computer Science Basics</td>
             <td><input type="number" class="form-control grade" value="0" min="0" max="10" step="0.1"></td>
@@ -81,7 +95,10 @@
             <td>Quarter 1</td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Programming Basics -->
+        <tbody>
           <tr>
             <td>Programming Basics</td>
             <td><input type="number" class="form-control grade" value="0" min="0" max="10" step="0.1"></td>
@@ -90,7 +107,10 @@
             <td>Quarter 1</td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- IT Personality -->
+        <tbody>
           <tr>
             <td>IT Personality</td>
             <td><input type="number" class="form-control grade" value="0" min="0" max="10" step="0.1"></td>
@@ -99,7 +119,10 @@
             <td>Quarter 2 - 4</td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Object Oriented Programming -->
+        <tbody>
           <tr>
             <td>Object Oriented Programming</td>
             <td></td>
@@ -126,7 +149,10 @@
             <td></td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Framework Project 1 -->
+        <tbody>
           <tr>
             <td>Framework Project 1</td>
             <td></td>
@@ -171,7 +197,10 @@
             <td></td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Business IT Consultancy Basics -->
+        <tbody>
           <tr>
             <td>Business IT Consultancy Basics</td>
             <td><input type="number" class="form-control grade" value="0" min="0" max="10" step="0.1"></td>
@@ -180,7 +209,10 @@
             <td>Quarter 3 - 4</td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Framework Project 2 -->
+        <tbody>
           <tr>
             <td>Framework Project 2</td>
             <td></td>
@@ -216,7 +248,10 @@
             <td></td>
             <td>Ungraded</td>
           </tr>
+        </tbody>
 
+        <!-- Personal Professional Development Exploration -->
+        <tbody>
           <tr>
             <td>Personal Professional Development Exploration</td>
             <td><input type="number" class="form-control grade" value="0" min="0" max="10" step="0.1"></td>
