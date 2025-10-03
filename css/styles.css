@@ -213,4 +213,5 @@ a {
     background-color: var(--dark-primary);
     box-shadow: 0 4px 15px #0000004d;
     padding: 10px;
+    margin: 10px;
 }
